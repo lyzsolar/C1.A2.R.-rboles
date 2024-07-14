@@ -1,0 +1,60 @@
+body {
+    background-color: #8CD7F2;
+    font-family: Arial, sans-serif;
+    font-size: 16px; /* Cambia el tamaño de la fuente del cuerpo */
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+.form-container, .search-container {
+    background-color: #99bcf1;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 600px;
+    height: 800px; 
+}
+.form-container label, .search-container label {
+    color: rgb(0, 0, 0);
+    margin-top: 18px;
+    display: block; 
+    font-size: 18px; /* Cambia el tamaño de la fuente de los labels */
+}
+.form-container input, .search-container input, .form-container button, .search-container button {
+    margin-top: 15px; 
+    padding: 15px;
+    border-radius: 10px;
+    width: calc(100% - 50px);
+    font-size: 16px; /* Cambia el tamaño de la fuente de los inputs y botones */
+}
+.form-container button, .search-container button {
+    background-color: rgb(32, 29, 228);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px; /* Cambia el tamaño de la fuente de los botones */
+}
+.form-container button:hover, .search-container button:hover {
+    background-color: darkgreen;
+}
+.search-container table, th, td {
+    border: 1px solid white;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    font-size: 16px; /* Cambia el tamaño de la fuente de las celdas de la tabla */
+}
+.search-container table {
+    margin-top: 10px;
+    border-collapse: collapse;
+    width: 100%;
+}
+.search-container th {
+    background-color: green;
+    color: white;
+}

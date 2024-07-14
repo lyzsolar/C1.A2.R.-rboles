@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VetAssistan</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.11.0/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.11.0/dist/sweetalert2.min.css">
+</head>
+<body>
+    <div class="container">
+        <img src="./src/imagenes/perro.png" alt="img-perro">
+        <div class="form-container">
+            <form>
+                <label for="nombre">Nombre de la mascota:</label>
+                <input type="text" id="nombreMascota" name="nombre">
+                
+                <label for="peso">Peso:</label>
+                <input type="text" id="pesoMascota" name="peso">
+                
+                <label for="edad">Edad:</label>
+                <input type="text" id="edadMascota" name="edad">
+                
+                <label for="raza">Raza:</label>
+                <input type="text" id="razaMascota" name="raza">
+                
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fechaMascota" name="fecha" placeholder="dd/mm/aaaa">
+                
+                <button id="animal-btn" type="button">Enviar</button>
+            </form>
+        </div>
+        <div class="search-container">
+            <label for="buscar">Buscar mascotas:</label>
+            <input type="text" id="buscar" name="buscar" placeholder="Ingrese el nombre de la mascota a buscar">
+            <button id="search-btn" type="button">Buscar</button><br><br>
+            
+            <button id="min-btn" type="button">Buscar valor mínimo</button>
+            <button id="max-btn" type="button">Buscar valor máximo</button>
+                
+            <button id="show-all-btn" type="button">Mostrar todas la mascotas</button>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Peso</th>
+                        <th>Edad</th>
+                        <th>Raza</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- aquí se va a llenar automáticamente -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script type="module" src="src/controllers/script.js"></script>
+</body>
+</html>
